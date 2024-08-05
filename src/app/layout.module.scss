@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url("/Starjedi.ttf") format("truetype");
+}
+
+.starWarsText {
+  padding: 10px;
+  font-family: "Star Jedi", sans-serif !important;
+  color: #000;
+  text-shadow: 2px 2px 0 #ffe81f, -2px -2px 0 #ffe81f, 2px -2px 0 #ffe81f,
+    -2px 2px 0 #ffe81f;
+}
+
+.layoutContainer {
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #3d3d3d;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-blend-mode: lighten;
+}
+
+.layoutChild {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
