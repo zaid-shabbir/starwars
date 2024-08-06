@@ -46,7 +46,7 @@ export const useCharacters = (page: number, search: string | null) => {
     };
 
     fetchData();
-  }, [page]);
+  }, [page, search]);
 
   return { data, loading, error };
 };
