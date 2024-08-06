@@ -41,7 +41,7 @@ const CharacterDialog: React.FC<CharacterDialogProps> = (
               {planetData && (
                 <div className={styles.container}>
                   <div>
-                    <Typography variant='h6' gutterBottom>
+                    <Typography variant='body1' fontWeight={700} gutterBottom>
                       Details
                     </Typography>
                     <Typography variant='body2' gutterBottom>
@@ -61,10 +61,20 @@ const CharacterDialog: React.FC<CharacterDialogProps> = (
                     </Typography>
                   </div>
                   <div className={styles.homeworld}>
-                    {loading && <CircularProgress size={30} color='info' />}
+                    {loading && (
+                      <CircularProgress
+                        size={30}
+                        color='info'
+                        className={styles.loader}
+                      />
+                    )}
                     {!loading && (
                       <div>
-                        <Typography variant='h6' gutterBottom>
+                        <Typography
+                          variant='body1'
+                          fontWeight={700}
+                          gutterBottom
+                        >
                           Homeworld
                         </Typography>
                         <Typography variant='body2' gutterBottom>
